@@ -1,16 +1,27 @@
 <header>
-  <h3>Rick and Morty APP - UTN</h3>
+  <h3>APP de Rick and Morty | UTN</h3>
   <nav>
     <ul>
       <li><a routerLink="/">Home</a></li>
-      @if(isLoggingIn) {
-      <li><a routerLink="/characters">Characters</a></li>
+
+      @if (isLoggedIn) {
+        <li><a routerLink="/characters">Characters</a></li>
       }
+
       <li><a routerLink="/contact">Contact</a></li>
-      @if(isLoggingIn) {
-      <button (click)="isLoggingIn = false">Cerrar sesión</button>
+
+      @if (isLoggedIn) {
+        <li><span style="font-size:x-large;font-weight: bold; color: #ff01dd;">Hola {{ userName }}</span></li>
+        <li><button (click)="logout()">Cerrar sesión</button></li>
       } @else {
-      <button (click)="isLoggingIn = true">Iniciar sesión</button>
+        @if (isLoggingIn) {
+          <li>
+            <input #nameInput type="text" placeholder="Tu nombre" />
+            <button (click)="login(nameInput)">Entrar</button>
+          </li>
+        } @else {
+          <li><button (click)="toggleLogin()">Iniciar sesión</button></li>
+        }
       }
     </ul>
   </nav>

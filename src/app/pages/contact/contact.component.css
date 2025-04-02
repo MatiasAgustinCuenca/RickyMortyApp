@@ -1,0 +1,84 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 3rem 1rem 2rem;
+  background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/11/rick-morty.jpeg?tf=3840x');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2rem 4rem;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+  width: 80vw;
+  max-width: 1200px;
+  backdrop-filter: blur(6px);
+  margin-top: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff00ff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d600d6;
+}
+.form-error-box {
+  background-color: #ffdddd;
+  color: #b80000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #ff0000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}

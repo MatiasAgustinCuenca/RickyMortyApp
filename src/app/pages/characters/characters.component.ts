@@ -4,20 +4,20 @@ import { CharacterComponent } from '../../components/character/character.compone
 
 @Component({
   selector: 'app-characters',
+  standalone: true,
   imports: [CharacterComponent],
   templateUrl: './characters.component.html',
   styleUrl: './characters.component.css',
   providers: [CharactersService],
 })
-
 export class CharactersComponent implements OnInit {
-  characters: any = []
+  characters: any = [];
 
-  constructor(private charactersService: CharactersService) { }
+  constructor(private charactersService: CharactersService) {}
 
   ngOnInit() {
     this.charactersService.getCharacters().then((data: any) => {
       this.characters = data;
-    })
+    });
   }
 }

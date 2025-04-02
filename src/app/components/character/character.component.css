@@ -1,0 +1,29 @@
+.characters-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .character-card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .character-card img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+  }
+  
+  .character-card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .character-card p {
+    font-size: 0.9rem;
+    color: #444;
+  }
+  

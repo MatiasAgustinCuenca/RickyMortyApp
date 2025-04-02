@@ -1,0 +1,38 @@
+:host {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-image: url('https://m.media-amazon.com/images/S/pv-target-images/87bd8d9edc4fafda8377cdc6da823ca55cc8afe36dc855d4a4b311716c69b521.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 3rem;
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 4px 4px 12px #000000;
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px #000000;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  

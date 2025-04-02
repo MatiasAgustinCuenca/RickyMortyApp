@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: black;
+    color: #ccc;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  footer strong {
+    color: fuchsia;
+  }
+  
